@@ -70,7 +70,7 @@ export const bentoProjects: BentoProject[] = [
     title: "PORT Initiative Strategy",
     subtitle: "System Architecture",
     description:
-      "Performed deep-dive research to identify hidden dependencies and technical gaps across 12+ repositories, enabling a major organizational structural shift.",
+      "Performed deep-dive research to identify hidden dependencies and technical gaps across 5+ core repositories, enabling a major organizational structural shift.",
     focusAreas: ["System Analysis", "Risk Mitigation", "Pub/Sub"],
     tags: ["Strategy", "Architecture", "DevOps"],
   },
@@ -118,11 +118,12 @@ export const experienceTimeline: ExperienceEntry[] = [
     role: "Software Engineer",
     dateRange: "Dec 2021 – Feb 2026",
     highlights: [
-      "Engineering Velocity: Delivered 23 Web and 9 Mobile releases in 2025, maintaining high-impact delivery standards.",
-      "Auth & Identity: Served as SME for PingOne/DaVinci, architecting social auth flows (Google, FB, Apple) to unblock squad migrations.",
-      "Core Search: Key contributor to ULS and Agent Search 2.0, migrating complex filtering and state from Flutter to React/CMS.",
-      "Architectural Strategy: Led research for the PORT initiative, identifying integration gaps across CMS and backend services.",
-      "Cross-Functional: Facilitated Agile ceremonies and acted as operational backup for leadership to ensure zero velocity loss.",
+      "Engineering Velocity & Delivery: Successfully delivered 23 Web and 9 Mobile releases in a single year across React and Flutter ecosystems. Acted as a core contributor to the 2025 Luxury Site launch, architecting flexible theming using Handlebars, Less, and GraphQL.",
+      "Identity Orchestration (Ping DaVinci): Served as the primary PingOne and DaVinci SME. Architected and standardized secure, cross-platform social authentication flows (Google, Facebook, Apple) to unblock security integrations for multiple engineering squads.",
+      "Core Search Architecture (ULS): Key contributor to the Unified Listings Search (ULS) and Agent Search 2.0 migrations. Led the technical translation of complex filtering, state management, and GraphQL payloads from a legacy Flutter app into a modernized React/CMS architecture.",
+      "Enterprise Compliance Engineering: Engineered critical MLS-specific compliance logic to ensure legal parity across web and mobile platforms, including rendering pipelines for restricted off-market listing photos and dynamic attribution labels.",
+      "Infrastructure & DevOps: Resolved complex backend event-driven issues, including GCP Pub/Sub message payloads and cloud function timeouts. Participated in local DevOps audits to streamline MongoDB Atlas access and improve CI/CD build pipelines.",
+      "Cross-Functional Leadership: Facilitated Agile ceremonies and acted as the operational backup for Product and Scrum leadership. Drove platform stability through rigorous peer code reviews and comprehensive regression testing during large-scale migrations.",
     ],
   },
   {
@@ -184,31 +185,31 @@ export const caseStudies: CaseStudy[] = [
     title: "Identity Orchestration & Auth",
     hook: "Standardizing secure authentication orchestration to unblock cross-squad migrations.",
     problem:
-      "Authentication implementation knowledge was fragmented across squads, creating delivery bottlenecks and inconsistent identity flows. Teams needed a reliable architecture for social sign-on (Google, FB, Apple) without repeatedly rediscovering constraints[cite: 44, 73, 91, 155].",
+      "Authentication implementation knowledge was fragmented across squads, creating delivery bottlenecks and inconsistent identity flows. Teams needed a reliable architecture for social sign-on (Google, FB, Apple) without repeatedly rediscovering constraints.",
     solution:
-      "Operated as the primary PingOne/DaVinci SME, creating repeatable integration patterns and troubleshooting flow orchestration[cite: 12, 149]. Partnered directly with feature teams to conduct architecture reviews and establish implementation guidance, improving security consistency and release confidence[cite: 139, 151, 158].",
+      "Operated as the primary PingOne/DaVinci SME, creating repeatable integration patterns and troubleshooting flow orchestration. Partnered directly with feature teams to conduct architecture reviews and establish implementation guidance, improving security consistency and release confidence.",
     technologies: ["PingOne", "Ping DaVinci", "OAuth", "SSO", "Identity Orchestration"],
     sourceUrl: undefined,
   },
   {
     slug: "hybrid-search-migration",
     title: "Hybrid Search Migration",
-    hook: "Migrating complex search behavior from Flutter to React/CMS while preserving UX parity and delivery velocity[cite: 172, 179].",
+    hook: "Migrating complex search behavior from Flutter to React/CMS while preserving UX parity and delivery velocity.",
     problem:
-      "A legacy Flutter-based search experience created technical debt and slowed evolution in the web stack[cite: 179]. Critical filtering logic and state management were tightly coupled to legacy implementation, creating high regression risk[cite: 180].",
+      "A legacy Flutter-based search experience created technical debt and slowed evolution in the web stack. Critical filtering logic and state management were tightly coupled to legacy implementation, creating high regression risk.",
     solution:
-      "Led the technical translation of core search workflows into React/CMS, maintaining parity across 23 annual web releases[cite: 172, 180, 272]. Decomposed Flutter behavior into reusable web patterns and validated parity through iterative checkpoints, ensuring search reliability without sacrificing throughput[cite: 179, 273, 274].",
+      "Led the technical translation of core search workflows into React/CMS, maintaining parity across 23 annual web releases. Decomposed Flutter behavior into reusable web patterns and validated parity through iterative checkpoints, ensuring search reliability without sacrificing throughput.",
     technologies: ["React", "Flutter Bridge", "CMS", "GraphQL", "State Management"],
     sourceUrl: undefined,
   },
   {
     slug: "architectural-strategy-port",
     title: "PORT Initiative Strategy",
-    hook: "Driving architectural strategy by exposing hidden dependencies and integration risks across a multi-repository ecosystem[cite: 150, 157, 224].",
+    hook: "Driving architectural strategy by exposing hidden dependencies and integration risks across a multi-repository ecosystem.",
     problem:
-      "The PORT initiative required massive technical realignment, but dependencies were spread across 12+ repositories with no clear system map, creating elevated risks of breakage[cite: 150, 213, 231].",
+      "The PORT initiative required massive technical realignment, but dependencies were spread across 5+ core repositories with no clear system map, creating elevated risks of breakage.",
     solution:
-      "Executed research spikes to identify hidden coupling and service boundaries[cite: 150, 215, 224]. Translated findings into actionable sequencing guidance for leadership, reducing unknowns and enabling a safer path for structural changes across CMS and backend systems[cite: 151, 232, 233].",
+      "Executed research spikes to identify hidden coupling and service boundaries across 5+ core repositories. Translated findings into actionable sequencing guidance for leadership, reducing unknowns and enabling a safer path for structural changes across CMS and backend systems.",
     technologies: ["System Analysis", "Risk Mitigation", "Pub/Sub", "GCP", "Backend Services"],
     sourceUrl: undefined,
   },
