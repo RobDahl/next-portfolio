@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { notFound } from "next/navigation";
 import { use } from "react";
+import Link from "next/link";
 import { caseStudies } from "@/data/data";
 
 interface PageProps {
@@ -22,6 +23,19 @@ export default function CaseStudyPage({ params }: PageProps) {
       transition={{ duration: 0.6, ease: "easeInOut" }}
       className="relative min-h-screen bg-gradient-to-b from-[#070b14] to-[#0a0f1e] text-white"
     >
+      {/* Back Button */}
+      <div className="absolute top-4 left-4 z-10">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/5 px-3 py-2 text-sm text-zinc-300 transition hover:border-white/35 hover:bg-white/10 hover:text-white"
+        >
+          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+          Back
+        </Link>
+      </div>
+
       {/* Hero Banner */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(34,211,238,0.12),transparent_70%)]" />
