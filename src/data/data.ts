@@ -68,7 +68,7 @@ export const experienceTimeline: ExperienceEntry[] = [
     role: "Software Engineer",
     dateRange: "Dec 2021 – Feb 2026",
     highlights: [
-      "Deployed 23 Web and 9 Mobile releases in a single year by developing cross-platform components with React, React Native, and Flutter.",
+      "Deployed 23 Web and 9 Mobile releases in a single year by developing cross-platform components with React, Typescript, and Flutter.",
       "Engineered features for the 2025 Luxury Site launch, migrating Agent Search from Flutter to CMS and implementing a flexible theming architecture using Handlebars, Less, and GraphQL.",
       "Constructed secure authentication flows in Ping DaVinci, acting as the primary Subject Matter Expert (SME) to unblock cross-team security integrations.",
       "Led deep architectural assessments across CMS, Flutter, and backend services to decouple dependencies and mitigate cross-team integration risks.",
