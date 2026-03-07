@@ -116,7 +116,7 @@ export const experienceTimeline: ExperienceEntry[] = [
   {
     company: "Keller Williams Realty",
     role: "Software Engineer",
-    dateRange: "Dec 2021 – Feb 2026",
+    dateRange: "Dec 2021 – Mar 2026",
     highlights: [
       "Engineering Velocity & Delivery: Successfully delivered 23 Web and 9 Mobile releases in a single year across React and Flutter ecosystems. Acted as a core contributor to the 2025 Luxury Site launch, architecting flexible theming using Handlebars, Less, and GraphQL.",
       "Identity Orchestration (Ping DaVinci): Served as the primary PingOne and DaVinci SME. Architected and standardized secure, cross-platform social authentication flows (Google, Facebook, Apple) to unblock security integrations for multiple engineering squads.",
