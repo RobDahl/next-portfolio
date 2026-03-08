@@ -1,8 +1,9 @@
 import { BentoGrid } from "@/components/BentoGrid";
 import { ExperienceTimeline } from "@/components/ExperienceTimeline";
 import { Hero } from "@/components/Hero";
+import { HobbyBentoGrid } from "@/components/HobbyBentoGrid";
 import { SkillsSection } from "@/components/SkillsSection";
-import { bentoProjects, experienceTimeline, heroContent, skills } from "@/data/data";
+import { bentoProjects, experienceTimeline, heroContent, offTheClockHobbies, skills } from "@/data/data";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <BentoGrid projects={bentoProjects} />
         <ExperienceTimeline items={experienceTimeline} />
         <SkillsSection skills={skills} />
+        <HobbyBentoGrid hobbies={offTheClockHobbies} />
       </div>
     </main>
   );

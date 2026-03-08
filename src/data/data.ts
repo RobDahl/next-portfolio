@@ -38,6 +38,14 @@ export interface CaseStudy {
   sourceUrl?: string;
 }
 
+export interface HobbyEntry {
+  id: string;
+  title: string;
+  description: string;
+  images: string[];
+  span?: string;
+}
+
 export const heroContent: HeroContent = {
   name: "Rob Dahl",
   title: "Senior Full Stack Software Engineer",
@@ -93,15 +101,6 @@ export const bentoProjects: BentoProject[] = [
     tags: ["Automation", "Data Pipelines"],
   },
   {
-    slug: "homelab-proxmox-automation",
-    title: "Local Infrastructure & Virtualization (Homelab)",
-    subtitle: "Backend & Infrastructure",
-    description:
-      "Engineered a Proxmox hypervisor environment to securely host and isolate network services, including Home Assistant, Pi-hole (DNS sinkhole), and dedicated game servers, complete with automated backup orchestration.",
-    focusAreas: ["Proxmox", "Pi-hole", "Home Assistant", "Virtualization"],
-    tags: ["Proxmox", "Home Assistant", "Pi-hole", "Virtualization"],
-  },
-  {
     slug: "f1-telemetry-dashboard",
     title: "F1 Telemetry Dashboard (In Active Development)",
     subtitle: "Data Visualization",
@@ -109,6 +108,15 @@ export const bentoProjects: BentoProject[] = [
       "Developing a real-time Python and FastF1 data visualization app to ingest high-frequency racing data and compare driver telemetry across circuit sectors.",
     focusAreas: ["Python", "FastF1"],
     tags: ["Python", "FastF1", "Data Visualization"],
+  },
+  {
+    slug: "homelab-proxmox-automation",
+    title: "Local Infrastructure & Virtualization (Homelab)",
+    subtitle: "Backend & Infrastructure",
+    description:
+      "Engineered a Proxmox hypervisor environment to securely host and isolate network services, including Home Assistant, Pi-hole (DNS sinkhole), and dedicated game servers, complete with automated backup orchestration.",
+    focusAreas: ["Proxmox", "Pi-hole", "Home Assistant", "Virtualization"],
+    tags: ["Proxmox", "Home Assistant", "Pi-hole", "Virtualization"],
   },
 ];
 
@@ -256,5 +264,57 @@ export const caseStudies: CaseStudy[] = [
       "I engineered a hypervisor environment utilizing Proxmox Virtual Environment (PVE) to orchestrate multiple isolated Virtual Machines and LXC containers. The cluster currently hosts Home Assistant for localized smart home telemetry, Pi-hole for network-wide DNS sinkholing, and a dedicated Minecraft (ATM10) server. I implemented automated, scheduled backup jobs for all core VMs, ensuring rapid disaster recovery. The infrastructure is highly stable, with core services currently maintaining over 39 days of uninterrupted uptime.",
     technologies: ["Proxmox VE", "Home Assistant", "Pi-hole", "Virtualization", "Linux", "Automated Backups"],
     sourceUrl: undefined,
+  },
+];
+
+export const offTheClockHobbies: HobbyEntry[] = [
+  {
+    id: "cat",
+    title: "Senior QA Tester",
+    description: "Keeping a 10-year-old cat entertained between commits.",
+    images: ["/images/cat-1.jpg", "/images/cat-2.jpg", "/images/cat-3.jpg"],
+    span: "col-span-1", 
+  },
+  {
+    id: "hiking",
+    title: "Hiking & Nature",
+    description: "Exploring mountain trails and chasing waterfalls to recharge between sprints.",
+    images: ["/images/hiking-1.jpg"],
+    span: "row-span-2", 
+  },
+  {
+    id: "sim-racing",
+    title: "Sim Racing",
+    description: "Turning laps in iRacing and dialing in force feedback on my custom-built rig running a Moza R9 wheelbase.",
+    images: ["/images/sim-rig-1.jpg"],
+    span: "col-span-1",
+  },
+  {
+    id: "formula-1",
+    title: "Formula 1",
+    description: "Armchair strategist. Still recovering from cheering on Piastri through that intense championship battle last year.",
+    images: ["/images/f1-piastri.jpg"],
+    span: "col-span-1",
+  },
+  {
+    id: "cooking",
+    title: "Cooking & Foodie",
+    description: "Experimenting with recipes and techniques from around the world.",
+    images: ["/images/food-1.jpg", "/images/food-2.jpg"],
+    span: "col-span-1",
+  },
+  {
+    id: "3d-printing",
+    title: "3D Printing & Fabrication",
+    description: "Customizing functional parts and optimizing slice settings in Bambu Studio.",
+    images: ["/images/bambu-studio.png"],
+    span: "col-span-1",
+  },
+  {
+    id: "travel",
+    title: "Travel & Exploration",
+    description: "Discovering new places and capturing moments around the globe.",
+    images: ["/images/niagara-falls-1.jpg"],
+    span: "col-span-1 md:col-span-2",
   },
 ];
