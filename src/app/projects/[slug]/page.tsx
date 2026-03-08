@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { use } from "react";
 import Link from "next/link";
@@ -73,11 +74,23 @@ export default function CaseStudyPage({ params }: PageProps) {
             </div>
           </div>
 
-          {/* Wireframe placeholder for diagrams */}
-          <div className="rounded-3xl border border-dashed border-white/20 bg-white/[0.01] p-6 md:p-8">
-            <div className="flex h-64 items-center justify-center rounded-2xl border border-dashed border-white/15 bg-white/[0.02] text-zinc-500">
-              <p className="text-center text-sm uppercase tracking-[0.15em]">Architectural Diagram / UI Screenshot Placeholder</p>
-            </div>
+          {/* UI Screenshot */}
+          <div className="rounded-3xl border border-white/10 bg-white/[0.02] p-6 md:p-8">
+            {study.visualPath ? (
+              <div className="relative h-96 overflow-hidden rounded-2xl border border-white/15">
+                <Image
+                  src={study.visualPath}
+                  alt={study.visualAlt ?? `${study.title} visual`}
+                  fill
+                  className={study.visualFit === "cover" ? "object-cover" : "object-contain"}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+                />
+              </div>
+            ) : (
+              <div className="flex h-64 items-center justify-center rounded-2xl border border-dashed border-white/15 bg-white/[0.02] text-zinc-500">
+                <p className="text-center text-sm uppercase tracking-[0.15em]">Architectural Diagram / UI Screenshot Placeholder</p>
+              </div>
+            )}
           </div>
         </div>
 

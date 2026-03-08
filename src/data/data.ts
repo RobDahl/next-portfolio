@@ -35,6 +35,9 @@ export interface CaseStudy {
   problem: string;
   solution: string;
   technologies: string[];
+  visualPath?: string;
+  visualAlt?: string;
+  visualFit?: "contain" | "cover";
   sourceUrl?: string;
 }
 
@@ -252,6 +255,9 @@ export const caseStudies: CaseStudy[] = [
     solution:
       "I’m developing a Python/Next.js application that uses the FastF1 library to fetch live and historical F1 data, processes high-frequency telemetry streams, and renders interactive charts via D3.js. The app supports sector-by-sector lap comparisons, tire strategy analysis, and real-time race deltas. A WebSocket layer ensures sub-second updates during live sessions.",
     technologies: ["Python", "FastF1", "Next.js", "D3.js", "WebSockets", "PostgreSQL"],
+    visualPath: "/images/f1-telemetry-app.png",
+    visualAlt: "F1 Telemetry Dashboard Application Interface",
+    visualFit: "contain",
     sourceUrl: "https://github.com/RobDahl/f1-telemetry-dashboard",
   },
   {
