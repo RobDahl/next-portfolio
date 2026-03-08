@@ -39,6 +39,7 @@ export interface CaseStudy {
   visualAlt?: string;
   visualFit?: "contain" | "cover";
   sourceUrl?: string;
+  buttonText?: string;
 }
 
 export interface HobbyEntry {
@@ -201,6 +202,7 @@ export const caseStudies: CaseStudy[] = [
       "Operated as the primary PingOne/DaVinci SME, creating repeatable integration patterns and troubleshooting flow orchestration. Partnered directly with feature teams to conduct architecture reviews and establish implementation guidance, improving security consistency and release confidence.",
     technologies: ["PingOne", "Ping DaVinci", "OAuth", "SSO", "Identity Orchestration"],
     sourceUrl: undefined,
+    buttonText: "Enterprise Case Study",
   },
   {
     slug: "hybrid-search-migration",
@@ -212,6 +214,7 @@ export const caseStudies: CaseStudy[] = [
       "Led the technical translation of core search workflows into React/CMS, maintaining parity across 23 annual web releases. Decomposed Flutter behavior into reusable web patterns and validated parity through iterative checkpoints, ensuring search reliability without sacrificing throughput.",
     technologies: ["React", "Flutter Bridge", "CMS", "GraphQL", "State Management"],
     sourceUrl: undefined,
+    buttonText: "Enterprise Case Study",
   },
   {
     slug: "architectural-strategy-port",
@@ -223,6 +226,7 @@ export const caseStudies: CaseStudy[] = [
       "Executed research spikes to identify hidden coupling and service boundaries across 5+ core repositories. Translated findings into actionable sequencing guidance for leadership, reducing unknowns and enabling a safer path for structural changes across CMS and backend systems.",
     technologies: ["System Analysis", "Risk Mitigation", "Pub/Sub", "GCP", "Backend Services"],
     sourceUrl: undefined,
+    buttonText: "Enterprise Case Study",
   },
   {
     slug: "compliance-engineering-mls",
@@ -234,6 +238,7 @@ export const caseStudies: CaseStudy[] = [
       "I engineered MLS-specific mapping and validation logic to normalize listing data and enforce compliance rules consistently across platforms. By formalizing business-rule implementation paths and hardening transformation logic, the system improved integrity for high-volume listing pipelines while reducing parity drift between channels.",
     technologies: ["MLS Rules", "Data Mapping", "Compliance Logic", "Web", "Mobile"],
     sourceUrl: undefined,
+    buttonText: "Enterprise Case Study",
   },
   {
     slug: "peak-pulse-automation",
@@ -245,6 +250,7 @@ export const caseStudies: CaseStudy[] = [
       "I am actively architecting a modernized data pipeline to replace the legacy spreadsheet system. The new architecture utilizes a Node.js service to interact with the Outscraper API for lead generation, normalizing and storing the payload in a PostgreSQL database (Supabase). The final phase involves integrating the Lob.com API to programmatically trigger physical direct mail fulfillment the moment a qualified lead hits the database.",
     technologies: ["Node.js", "PostgreSQL (Supabase)", "Outscraper API", "Lob API", "Data Pipelines"],
     sourceUrl: undefined,
+    buttonText: "Code Private",
   },
   {
     slug: "f1-telemetry-dashboard",
@@ -270,6 +276,7 @@ export const caseStudies: CaseStudy[] = [
       "I engineered a hypervisor environment utilizing Proxmox Virtual Environment (PVE) to orchestrate multiple isolated Virtual Machines and LXC containers. The cluster currently hosts Home Assistant for localized smart home telemetry, Pi-hole for network-wide DNS sinkholing, and a dedicated Minecraft (ATM10) server. I implemented automated, scheduled backup jobs for all core VMs, ensuring rapid disaster recovery. The infrastructure is highly stable, with core services currently maintaining over 39 days of uninterrupted uptime.",
     technologies: ["Proxmox VE", "Home Assistant", "Pi-hole", "Virtualization", "Linux", "Automated Backups"],
     sourceUrl: undefined,
+    buttonText: "Code Private",
   },
 ];
 

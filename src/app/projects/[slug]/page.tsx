@@ -122,7 +122,7 @@ export default function CaseStudyPage({ params }: PageProps) {
               </a>
             ) : (
               <div className="inline-flex w-full items-center justify-center rounded-xl border border-zinc-500/30 bg-zinc-500/10 px-4 py-3 text-sm font-medium text-zinc-400">
-                Enterprise Case Study
+                {study.buttonText || "Case Study"}
               </div>
             )}
           </div>
