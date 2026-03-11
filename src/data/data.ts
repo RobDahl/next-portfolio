@@ -54,7 +54,7 @@ export const heroContent: HeroContent = {
   name: "Rob Dahl",
   title: "Senior Full Stack Software Engineer",
   summary:
-    "Software Engineer with 8+ years of experience and a proven track record of technical agility, independently migrating complex architectures between Flutter and React/CMS environments. Expert in executing secure identity management integrations and optimizing performance across high-volume, event-driven microservices.",
+    "Software Engineer with 8+ years of experience and a proven track record of technical agility, independently navigating and migrating complex architectures across Flutter, React, and Handlebars CMS ecosystems. Expert in executing secure identity management integrations and optimizing performance across high-volume, event-driven microservices.",
   photoPath: "/images/profile.jpg",
 };
 
@@ -69,13 +69,13 @@ export const bentoProjects: BentoProject[] = [
     tags: ["Security", "Identity", "PingOne"],
   },
   {
-    slug: "hybrid-search-migration",
-    title: "Hybrid Search Migration",
+    slug: "core-search-architecture",
+    title: "Core Search Architecture",
     subtitle: "Architecture & UI",
     description:
-      "Led the technical translation of the Agent Search engine from Flutter to React/CMS, maintaining parity across 23+ annual web releases.",
-    focusAreas: ["React", "Flutter Bridge", "GraphQL"],
-    tags: ["Technical Agility", "Migration", "GraphQL"],
+      "Key contributor for the Agent Search 2.0 migration from Flutter Web to a Handlebars CMS, alongside the Unified Listings Search (ULS) migration in the React-based Command platform.",
+    focusAreas: ["React", "Handlebars CMS", "GraphQL"],
+    tags: ["Technical Agility", "Migration", "Search Architecture"],
   },
   {
     slug: "architectural-strategy-port",
@@ -132,7 +132,7 @@ export const experienceTimeline: ExperienceEntry[] = [
     highlights: [
       "Engineering Velocity & Delivery: Successfully delivered 23 Web and 9 Mobile releases in a single year across React and Flutter ecosystems. Acted as a core contributor to the 2025 Luxury Site launch, architecting flexible theming using Handlebars, Less, and GraphQL.",
       "Identity Orchestration (Ping DaVinci): Served as the primary PingOne and DaVinci SME. Architected and standardized secure, cross-platform social authentication flows (Google, Facebook, Apple) to unblock security integrations for multiple engineering squads.",
-      "Core Search Architecture (ULS): Key contributor to the Unified Listings Search (ULS) and Agent Search 2.0 migrations. Led the technical translation of complex filtering, state management, and GraphQL payloads from a legacy Flutter app into a modernized React/CMS architecture.",
+      "Core Search Architecture: Key contributor for the 'Agent Search 2.0' migration, transitioning complex filtering and GraphQL payloads from Flutter Web to a Handlebars CMS to optimize SEO and performance, as well as the separate Unified Listings Search (ULS) migration in the React-based Command platform.",
       "Enterprise Compliance Engineering: Engineered critical MLS-specific compliance logic to ensure legal parity across web and mobile platforms, including rendering pipelines for restricted off-market listing photos and dynamic attribution labels.",
       "Infrastructure & DevOps: Resolved complex backend event-driven issues, including GCP Pub/Sub message payloads and cloud function timeouts. Participated in local DevOps audits to streamline MongoDB Atlas access and improve CI/CD build pipelines.",
       "Cross-Functional Leadership: Facilitated Agile ceremonies and acted as the operational backup for Product and Scrum leadership. Drove platform stability through rigorous peer code reviews and comprehensive regression testing during large-scale migrations.",
@@ -205,14 +205,14 @@ export const caseStudies: CaseStudy[] = [
     buttonText: "Enterprise Case Study",
   },
   {
-    slug: "hybrid-search-migration",
-    title: "Hybrid Search Migration",
-    hook: "Migrating complex search behavior from Flutter to React/CMS while preserving UX parity and delivery velocity.",
+    slug: "core-search-architecture",
+    title: "Core Search Architecture Migrations",
+    hook: "Executing dual architectural migrations: optimizing Consumer Search via Handlebars CMS while engineering Unified Listings Search (ULS) parity into a React enterprise platform.",
     problem:
-      "A legacy Flutter-based search experience created technical debt and slowed evolution in the web stack. Critical filtering logic and state management were tightly coupled to legacy implementation, creating high regression risk.",
+      "The organization faced two distinct architectural bottlenecks. On the Consumer side, a legacy Flutter Web search experience hindered SEO and web performance. Concurrently, the Agent-centric 'Command' platform lacked feature parity with the consumer experience and needed a modernized React implementation of the Unified Listings Search (ULS).",
     solution:
-      "Led the technical translation of core search workflows into React/CMS, maintaining parity across 23 annual web releases. Decomposed Flutter behavior into reusable web patterns and validated parity through iterative checkpoints, ensuring search reliability without sacrificing throughput.",
-    technologies: ["React", "Flutter Bridge", "CMS", "GraphQL", "State Management"],
+      "I served as a key contributor across both initiatives. For the Consumer platform, I helped translate the Agent Search engine from Flutter Web into a modernized Handlebars CMS to drastically improve load times and SEO. Simultaneously, I crossed over to the Command platform, engineering Consumer Parity features directly into their React codebase to ensure search reliability and feature consistency across the enterprise.",
+    technologies: ["React", "Handlebars CMS", "Flutter Web", "GraphQL", "State Management"],
     sourceUrl: undefined,
     buttonText: "Enterprise Case Study",
   },
