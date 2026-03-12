@@ -64,7 +64,7 @@ export const bentoProjects: BentoProject[] = [
     title: "Identity Orchestration & Auth",
     subtitle: "Enterprise Security",
     description:
-      "Subject Matter Expert for PingOne and DaVinci, architecting secure cross-platform authentication flows and unblocking migrations for multiple engineering squads.",
+      "Subject Matter Expert for PingOne and DaVinci, architecting secure cross-platform authentication flows and unblocking migrations for multiple engineering teams.",
     focusAreas: ["Ping DaVinci", "Auth Logic", "SME Leadership"],
     tags: ["Security", "Identity", "PingOne"],
   },
@@ -131,7 +131,7 @@ export const experienceTimeline: ExperienceEntry[] = [
     dateRange: "Dec 2021 – Mar 2026",
     highlights: [
       "Engineering Velocity & Delivery: Successfully delivered 23 Web and 9 Mobile releases in a single year across React and Flutter ecosystems. Acted as a core contributor to the 2025 Luxury Site launch, architecting flexible theming using Handlebars, Less, and GraphQL.",
-      "Identity Orchestration (Ping DaVinci): Served as the primary PingOne and DaVinci SME. Architected and standardized secure, cross-platform social authentication flows (Google, Facebook, Apple) to unblock security integrations for multiple engineering squads.",
+      "Identity Orchestration (Ping DaVinci): Served as the primary PingOne and DaVinci SME. Architected and standardized secure, cross-platform social authentication flows (Google, Facebook, Apple) to unblock security integrations for multiple engineering teams.",
       "Core Search Architecture: Key contributor for the 'Agent Search 2.0' migration, transitioning complex filtering and GraphQL payloads from Flutter Web to a Handlebars CMS to optimize SEO and performance, as well as the separate Unified Listings Search (ULS) migration in the React-based Command platform.",
       "Enterprise Compliance Engineering: Engineered critical MLS-specific compliance logic to ensure legal parity across web and mobile platforms, including rendering pipelines for restricted off-market listing photos and dynamic attribution labels.",
       "Infrastructure & DevOps: Resolved complex backend event-driven issues, including GCP Pub/Sub message payloads and cloud function timeouts. Participated in local DevOps audits to streamline MongoDB Atlas access and improve CI/CD build pipelines.",
@@ -195,9 +195,9 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "identity-orchestration-ping",
     title: "Identity Orchestration & Auth",
-    hook: "Standardizing secure authentication orchestration to unblock cross-squad migrations.",
+    hook: "Standardizing secure authentication orchestration to unblock cross-team migrations.",
     problem:
-      "Authentication implementation knowledge was fragmented across squads, creating delivery bottlenecks and inconsistent identity flows. Teams needed a reliable architecture for social sign-on (Google, FB, Apple) without repeatedly rediscovering constraints.",
+      "Authentication implementation knowledge was fragmented across teams, creating delivery bottlenecks and inconsistent identity flows. Teams needed a reliable architecture for social sign-on (Google, FB, Apple) without repeatedly rediscovering constraints.",
     solution:
       "Operated as the primary PingOne/DaVinci SME, creating repeatable integration patterns and troubleshooting flow orchestration. Partnered directly with feature teams to conduct architecture reviews and establish implementation guidance, improving security consistency and release confidence.",
     technologies: ["PingOne", "Ping DaVinci", "OAuth", "SSO", "Identity Orchestration"],
