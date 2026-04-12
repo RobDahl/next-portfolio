@@ -22,10 +22,9 @@ export interface ExperienceEntry {
 }
 
 export interface Skills {
-  languages: string[];
-  frameworks: string[];
-  cloudAndInfra: string[];
-  tools: string[];
+  coreStack: string[];
+  cloudAndData: string[];
+  supporting: string[];
 }
 
 export interface CaseStudy {
@@ -130,12 +129,12 @@ export const experienceTimeline: ExperienceEntry[] = [
     role: "Software Engineer",
     dateRange: "Dec 2021 – Mar 2026",
     highlights: [
-      "Engineering Velocity & Delivery: Successfully delivered 23 Web and 9 Mobile releases in a single year across React and Flutter ecosystems. Acted as a core contributor to the 2025 Luxury Site launch, architecting flexible theming using Handlebars, Less, and GraphQL.",
-      "Identity Orchestration (Ping DaVinci): Served as the primary PingOne and DaVinci SME. Architected and standardized secure, cross-platform social authentication flows (Google, Facebook, Apple) to unblock security integrations for multiple engineering teams.",
-      "Core Search Architecture: Key contributor for the 'Agent Search 2.0' migration, transitioning complex filtering and GraphQL payloads from Flutter Web to a Handlebars CMS to optimize SEO and performance, as well as the separate Unified Listings Search (ULS) migration in the React-based Command platform.",
-      "Enterprise Compliance Engineering: Engineered critical MLS-specific compliance logic to ensure legal parity across web and mobile platforms, including rendering pipelines for restricted off-market listing photos and dynamic attribution labels.",
-      "Infrastructure & DevOps: Resolved complex backend event-driven issues, including GCP Pub/Sub message payloads and cloud function timeouts. Participated in local DevOps audits to streamline MongoDB Atlas access and improve CI/CD build pipelines.",
-      "Cross-Functional Leadership: Facilitated Agile ceremonies and acted as the operational backup for Product and Scrum leadership. Drove platform stability through rigorous peer code reviews and comprehensive regression testing during large-scale migrations.",
+      "Velocity & Delivery: Drove the end-to-end delivery of 32 multi-platform releases in a single year, maintaining a consistent deployment cadence that met 100% of organizational delivery milestones, while managing the technical complexity of multi-platform updates.",
+      "Identity Lead: Served as the go-to SME for PingOne and DaVinci, designing the authentication patterns and unblocking other squads to ensure secure, cross-platform authentication flows.",
+      "Core Search Architecture: Key contributor for the ”Agent Search 2.0” migration, transitioning complex filtering and GraphQL payloads from Flutter Web to a Handlebars CMS to optimize SEO and performance, as well as the separate Unified Listings Search (ULS) migration in the React Command platform.",
+      "Strategic Risk Mitigation: Led the PORT initiative’s technical discovery, auditing cross-repository dependencies to preemptively identify and resolve critical integration risks during a major organizational shift.",
+      "Team Enablement & Operational Excellence: Partnered with Product and Scrum leadership to facilitate Agile ceremonies and drive operational continuity, ensuring development velocity remained unblocked and highquality through organizational transitions.",
+      "Cloud Infrastructure & DevOps: Optimized event-driven architectures by resolving complex GCP Pub/Sub payload issues and Cloud Function bottlenecks. Drove technical audits to streamline MongoDB Atlas access and accelerate CI/CD build pipelines.",
     ],
   },
   {
@@ -143,7 +142,7 @@ export const experienceTimeline: ExperienceEntry[] = [
     role: "Software Developer",
     dateRange: "Nov 2017 – Dec 2021",
     highlights: [
-      "Tablet POS App: Engineered a Windows-based POS application using ElectronJS, IIS Express, and MySQL to streamline local e-commerce transactions.",
+      "Tablet POS App: Engineered a Windows-based POS application using Electron.js, IIS Express, and MySQL to streamline local e-commerce transactions.",
       "Credit Transaction Portal: Modernized a legacy portal by migrating the frontend from PHP to React, implementing JWT authentication and advanced data sorting.",
       "Inventory Platform: Revamped web and mobile UIs using HTML, CSS, JavaScript, and jQuery to improve system accessibility.",
       "IT Help Desk Tool: Developed a centralized ticketing tool using Electron.js and SQLite, improving issue tracking and resolution times.",
@@ -152,42 +151,36 @@ export const experienceTimeline: ExperienceEntry[] = [
 ];
 
 export const skills: Skills = {
-  languages: [
-    "JavaScript",
+  coreStack: [
     "TypeScript",
-    "Dart",
-    "C++",
-    "PHP",
-    "HTML/CSS",
-    "SQL",
-    "GraphQL",
-  ],
-  frameworks: [
+    "JavaScript",
     "React",
-    "React Native",
-    "Flutter",
+    "Node.js",
     "Nest.js",
-    "Electron.js",
-    "jQuery",
-    "MJML",
+    "GraphQL",
+    "HTML/CSS/LESS",
   ],
-  cloudAndInfra: [
+  cloudAndData: [
     "GCP",
+    "AWS", 
+    "Docker",
     "Kubernetes",
     "Pub/Sub",
-    "AWS (S3, CloudFront)",
-    "Docker",
-    "Proxmox",
-  ],
-  tools: [
-    "Git",
-    "SVN",
+    "SQL",
     "MongoDB",
+  ],
+  supporting: [
+    "Dart",
+    "Flutter",
+    "React Native",
+    "Electron.js",
+    "Handlebars",
+    "Python",
+    "jQuery",
     "MySQL",
     "SQLite",
-    "Agile/Scrum",
-    "Ping DaVinci",
-    "Snyk",
+    "Proxmox",
+    "PingOne DaVinci",
   ],
 };
 
@@ -205,13 +198,25 @@ export const caseStudies: CaseStudy[] = [
     buttonText: "Enterprise Case Study",
   },
   {
+    slug: "cloud-infrastructure-devops",
+    title: "Cloud Infrastructure & DevOps",
+    hook: "Optimizing event-driven architectures and streamlining CI/CD pipelines to ensure backend reliability.",
+    problem:
+      "Complex event-driven backend workflows were experiencing intermittent failures due to GCP Pub/Sub payload issues and Cloud Function bottlenecks. Additionally, deployment velocity was being hindered by inefficient CI/CD build pipelines and fragmented database access management.",
+    solution:
+      "Drove technical audits to resolve event-driven latency and payload issues within GCP. Restructured deployment workflows to accelerate CI/CD build times, while streamlining MongoDB Atlas access protocols to improve operational security and database management for the engineering teams.",
+    technologies: ["GCP Pub/Sub", "Cloud Functions", "CI/CD", "MongoDB Atlas", "Event-Driven Architecture"],
+    sourceUrl: undefined,
+    buttonText: "Enterprise Case Study",
+  },
+  {
     slug: "core-search-architecture",
     title: "Core Search Architecture Migrations",
     hook: "Executing dual architectural migrations: optimizing Consumer Search via Handlebars CMS while engineering Unified Listings Search (ULS) parity into a React enterprise platform.",
     problem:
       "The organization faced two distinct architectural bottlenecks. On the Consumer side, a legacy Flutter Web search experience hindered SEO and web performance. Concurrently, the Agent-centric 'Command' platform lacked feature parity with the consumer experience and needed a modernized React implementation of the Unified Listings Search (ULS).",
     solution:
-      "I served as a key contributor across both initiatives. For the Consumer platform, I helped translate the Agent Search engine from Flutter Web into a modernized Handlebars CMS to drastically improve load times and SEO. Simultaneously, I crossed over to the Command platform, engineering Consumer Parity features directly into their React codebase to ensure search reliability and feature consistency across the enterprise.",
+      "Drove execution across both initiatives. For the Consumer platform, engineered the translation of the Agent Search engine from Flutter Web into a modernized Handlebars CMS, drastically improving load times and SEO. Simultaneously, bridged the Command platform by engineering Consumer Parity features directly into their React codebase to ensure search reliability and feature consistency across the enterprise.",
     technologies: ["React", "Handlebars CMS", "Flutter Web", "GraphQL", "State Management"],
     sourceUrl: undefined,
     buttonText: "Enterprise Case Study",
@@ -242,12 +247,12 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "peak-pulse-automation",
-    title: "Peak Pulse Lead Generation (In Progress)",
+    title: "Peak Pulse Lead Generation Data Pipeline",
     hook: "Transitioning a direct mail business from manual spreadsheet workflows to an automated, API-driven data pipeline.",
     problem:
       "The business was relying on manual data exports and disjointed Google Sheets App Scripts to manage direct mail campaigns. This led to high operational overhead, brittle data pipelines, and a lack of scalable tracking for lead conversion. They needed a programmatic way to scrape, normalize, and fulfill outreach.",
     solution:
-      "I am actively architecting a modernized data pipeline to replace the legacy spreadsheet system. The new architecture utilizes a Node.js service to interact with the Outscraper API for lead generation, normalizing and storing the payload in a PostgreSQL database (Supabase). The final phase involves integrating the Lob.com API to programmatically trigger physical direct mail fulfillment the moment a qualified lead hits the database.",
+      "Architected a modernized Node.js data pipeline to replace the legacy spreadsheet system. The architecture utilizes a backend service to interact with the Outscraper API for lead generation, normalizing and storing the payload in a PostgreSQL database (Supabase). Built integration pathways with the Lob.com API to programmatically trigger physical direct mail fulfillment as qualified leads enter the system.",
     technologies: ["Node.js", "PostgreSQL (Supabase)", "Outscraper API", "Lob API", "Data Pipelines"],
     sourceUrl: undefined,
     buttonText: "Code Private",
@@ -259,7 +264,7 @@ export const caseStudies: CaseStudy[] = [
     problem:
       "Motorsports analysts lacked an accessible tool to compare live and historical telemetry data across drivers, sessions, and circuit sectors. Existing platforms were either too complex or lacked real-time updates, making it difficult to derive insights during race weekends.",
     solution:
-      "I’m developing a Python/Next.js application that uses the FastF1 library to fetch live and historical F1 data, processes high-frequency telemetry streams, and renders interactive charts via D3.js. The app supports sector-by-sector lap comparisons, tire strategy analysis, and real-time race deltas. A WebSocket layer ensures sub-second updates during live sessions.",
+      "Developing a Python/Next.js application that uses the FastF1 library to fetch live and historical F1 data, processing high-frequency telemetry streams and rendering interactive charts via D3.js. The app supports sector-by-sector lap comparisons, tire strategy analysis, and real-time race deltas, utilizing a WebSocket layer to ensure sub-second updates during live sessions.",
     technologies: ["Python", "FastF1", "Next.js", "D3.js", "WebSockets", "PostgreSQL"],
     visualPath: "/images/f1-telemetry-app.png",
     visualAlt: "F1 Telemetry Dashboard Application Interface",

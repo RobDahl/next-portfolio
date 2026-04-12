@@ -5,10 +5,9 @@ interface SkillsSectionProps {
 }
 
 const skillGroups = [
-  { label: "Languages", key: "languages" },
-  { label: "Frameworks", key: "frameworks" },
-  { label: "Cloud & Infra", key: "cloudAndInfra" },
-  { label: "Tools", key: "tools" },
+  { label: "Core Stack", key: "coreStack" },
+  { label: "Cloud & Data", key: "cloudAndData" },
+  { label: "Supporting", key: "supporting" },
 ] as const;
 
 export function SkillsSection({ skills }: SkillsSectionProps) {
