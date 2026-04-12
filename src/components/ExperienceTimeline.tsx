@@ -22,12 +22,9 @@ export function ExperienceTimeline({ items }: ExperienceTimelineProps) {
               <p className="text-sm text-zinc-400">{item.dateRange}</p>
             </div>
 
-            <ul className="mt-4 space-y-2 text-sm leading-relaxed text-zinc-300 md:text-base">
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-zinc-300 marker:text-cyan-300 md:text-base">
               {item.highlights.map((highlight) => (
-                <li key={highlight} className="flex gap-2">
-                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-300" />
-                  <span>{highlight}</span>
-                </li>
+                <li key={highlight}>{highlight}</li>
               ))}
             </ul>
           </article>
