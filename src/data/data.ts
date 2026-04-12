@@ -135,6 +135,7 @@ export const experienceTimeline: ExperienceEntry[] = [
       "Strategic Risk Mitigation: Led the PORT initiative’s technical discovery, auditing cross-repository dependencies to preemptively identify and resolve critical integration risks during a major organizational shift.",
       "Team Enablement & Operational Excellence: Partnered with Product and Scrum leadership to facilitate Agile ceremonies and drive operational continuity, ensuring development velocity remained unblocked and highquality through organizational transitions.",
       "Cloud Infrastructure & DevOps: Optimized event-driven architectures by resolving complex GCP Pub/Sub payload issues and Cloud Function bottlenecks. Drove technical audits to streamline MongoDB Atlas access and accelerate CI/CD build pipelines.",
+      "Enterprise Compliance Architecture: Engineered critical MLS compliance logic to ensure legal parity across web and mobile platforms, designing dynamic rendering pipelines for restricted data and off-market attribution.",
     ],
   },
   {
