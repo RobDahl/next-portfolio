@@ -53,7 +53,7 @@ export const heroContent: HeroContent = {
   name: "Rob Dahl",
   title: "Senior Full Stack Software Engineer",
   summary:
-    "Software Engineer with 8+ years of experience and a proven track record of technical agility, independently navigating and migrating complex architectures across Flutter, React, and Handlebars CMS ecosystems. Expert in executing secure identity management integrations and optimizing performance across high-volume, event-driven microservices.",
+    "Senior Software Engineer with 8+ years of experience and a proven track record of technical agility, independently navigating and migrating complex architectures across React, Flutter, Handlebars CMS, and various backend ecosystems. Expert in executing secure identity management integrations and optimizing performance across high-volume, event-driven microservices.",
   photoPath: "/images/profile.jpg",
 };
 
