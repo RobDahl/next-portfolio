@@ -127,7 +127,7 @@ export const experienceTimeline: ExperienceEntry[] = [
   {
     company: "Keller Williams Realty",
     role: "Software Engineer",
-    dateRange: "Dec 2021 – Mar 2026",
+    dateRange: "Dec 2021 – May 2026",
     highlights: [
       "Velocity & Delivery: Drove the end-to-end delivery of 32 multi-platform releases in a single year, maintaining a consistent deployment cadence that met 100% of organizational delivery milestones, while managing the technical complexity of multi-platform updates.",
       "Identity Lead: Served as the go-to SME for PingOne and DaVinci, designing the authentication patterns and unblocking other squads to ensure secure, cross-platform authentication flows.",

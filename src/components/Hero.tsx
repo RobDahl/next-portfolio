@@ -38,7 +38,7 @@ export function Hero({ content }: HeroProps) {
 
           <div className="flex flex-wrap items-center gap-3 pt-2">
             <a
-              href="/Rob_Dahl_Resume.pdf"
+              href="/Rob_Dahl_Resume_26.pdf"
               download
               className="inline-flex items-center justify-center rounded-xl border border-cyan-300/30 bg-cyan-300/15 px-4 py-2 text-sm font-medium text-cyan-100 transition hover:border-cyan-200/50 hover:bg-cyan-300/20"
             >
