@@ -26,7 +26,7 @@ function HobbyCard({ hobby }: HobbyCardProps) {
     <motion.div
       whileHover={{ scale: 1.02 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
-      className={`relative overflow-hidden rounded-2xl border border-white/10 min-h-[256px] ${hobby.span || "col-span-1"} ${
+      className={`relative min-h-[256px] overflow-hidden rounded-2xl border border-[var(--color-border)] ${hobby.span || "col-span-1"} ${
         hobby.span === "row-span-2" ? "row-span-2" : ""
       }`}
     >
@@ -74,8 +74,9 @@ export function HobbyBentoGrid({ hobbies }: HobbyBentoGridProps) {
   return (
     <section className="space-y-6">
       <div className="space-y-2">
+        <p className="text-xs uppercase tracking-[0.2em] text-[var(--color-primary)]/75">Beyond Shipping</p>
         <h3 className="text-2xl font-semibold text-white md:text-3xl">Off the Clock</h3>
-        <p className="text-zinc-400">Beyond the keyboard—hobbies that keep me grounded and inspired.</p>
+        <p className="text-[var(--color-text-muted)]">Beyond the keyboard—hobbies that keep me grounded and inspired.</p>
       </div>
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3 auto-rows-[256px]">

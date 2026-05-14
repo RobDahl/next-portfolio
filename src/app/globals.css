@@ -1,8 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --background: #070b14;
-  --foreground: #f5f7ff;
+  --color-bg: #050812;
+  --color-bg-soft: #0b1020;
+  --color-surface: #101827;
+  --color-surface-elevated: #141f32;
+  --color-border: rgba(148, 163, 184, 0.16);
+  --color-border-strong: rgba(56, 189, 248, 0.32);
+  --color-text: #e5eef8;
+  --color-text-muted: #94a3b8;
+  --color-text-subtle: #64748b;
+  --color-primary: #38bdf8;
+  --color-primary-strong: #0ea5e9;
+  --color-primary-soft: rgba(56, 189, 248, 0.14);
+  --color-secondary: #8b5cf6;
+  --color-secondary-soft: rgba(139, 92, 246, 0.12);
+  --color-accent-warm: #f97316;
+  --grid-major: rgba(148, 163, 184, 0.04);
+  --grid-minor: rgba(148, 163, 184, 0.015);
+
+  --background: var(--color-bg);
+  --foreground: var(--color-text);
 }
 
 @theme inline {
@@ -13,11 +31,40 @@
 }
 
 body {
+  position: relative;
+  isolation: isolate;
   min-height: 100vh;
   background:
-    radial-gradient(circle at 20% 0%, rgba(34, 211, 238, 0.12) 0%, rgba(7, 11, 20, 0) 38%),
-    radial-gradient(circle at 85% 100%, rgba(217, 70, 239, 0.12) 0%, rgba(7, 11, 20, 0) 30%),
-    var(--background);
-  color: var(--foreground);
+    linear-gradient(to right, var(--grid-major) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-major) 1px, transparent 1px),
+    linear-gradient(to right, var(--grid-minor) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-minor) 1px, transparent 1px),
+    radial-gradient(circle at 50% -12%, var(--color-primary-soft) 0%, rgba(5, 8, 18, 0) 46%),
+    radial-gradient(circle at 78% 110%, var(--color-secondary-soft) 0%, rgba(5, 8, 18, 0) 34%),
+    linear-gradient(180deg, var(--color-bg-soft) 0%, var(--color-bg) 38%, var(--color-bg) 100%);
+  background-size:
+    72px 72px,
+    72px 72px,
+    24px 24px,
+    24px 24px,
+    auto,
+    auto,
+    auto;
+  color: var(--color-text);
   font-family: var(--font-sans), sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, rgba(5, 8, 18, 0) 36%, rgba(5, 8, 18, 0.84) 100%);
+  z-index: -1;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }

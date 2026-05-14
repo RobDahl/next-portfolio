@@ -1,6 +1,7 @@
 export interface HeroContent {
   name: string;
   title: string;
+  status: string;
   summary: string;
   photoPath: string;
 }
@@ -22,9 +23,11 @@ export interface ExperienceEntry {
 }
 
 export interface Skills {
-  coreStack: string[];
-  cloudAndData: string[];
-  supporting: string[];
+  productDelivery: string[];
+  identityAndPlatform: string[];
+  systemsAndAiWorkflows: string[];
+  frontendExperience: string[];
+  backendAndData: string[];
 }
 
 export interface CaseStudy {
@@ -52,6 +55,7 @@ export interface HobbyEntry {
 export const heroContent: HeroContent = {
   name: "Rob Dahl",
   title: "Senior Full Stack Software Engineer",
+  status: "Available for Senior Engineering roles",
   summary:
     "Senior Software Engineer with 8+ years of experience and a proven track record of technical agility, independently navigating and migrating complex architectures across React, Flutter, Handlebars CMS, and various backend ecosystems. Expert in executing secure identity management integrations and optimizing performance across high-volume, event-driven microservices.",
   photoPath: "/images/profile.jpg",
@@ -152,36 +156,45 @@ export const experienceTimeline: ExperienceEntry[] = [
 ];
 
 export const skills: Skills = {
-  coreStack: [
+  productDelivery: [
     "TypeScript",
     "JavaScript",
     "React",
     "Node.js",
-    "Nest.js",
     "GraphQL",
-    "HTML/CSS/LESS",
+    "Docker",
   ],
-  cloudAndData: [
+  identityAndPlatform: [
+    "PingOne DaVinci",
+    "GraphQL",
     "GCP",
-    "AWS", 
+    "AWS",
+    "Pub/Sub",
+    "Kubernetes",
+  ],
+  systemsAndAiWorkflows: [
+    "Python",
+    "Proxmox",
     "Docker",
     "Kubernetes",
     "Pub/Sub",
+    "SQLite",
+  ],
+  frontendExperience: [
+    "React",
+    "React Native",
+    "Flutter",
+    "Handlebars",
+    "HTML/CSS/LESS",
+    "jQuery",
+  ],
+  backendAndData: [
+    "Node.js",
+    "Nest.js",
     "SQL",
     "MongoDB",
-  ],
-  supporting: [
-    "Dart",
-    "Flutter",
-    "React Native",
     "Electron.js",
-    "Handlebars",
-    "Python",
-    "jQuery",
     "MySQL",
-    "SQLite",
-    "Proxmox",
-    "PingOne DaVinci",
   ],
 };
 

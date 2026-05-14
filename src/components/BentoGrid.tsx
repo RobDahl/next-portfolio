@@ -8,10 +8,11 @@ interface BentoGridProps {
 
 export function BentoGrid({ projects }: BentoGridProps) {
   return (
-    <section className="space-y-4">
+    <section id="projects" className="scroll-mt-20 space-y-4">
       <div className="space-y-2">
-        <h3 className="text-2xl font-semibold text-white md:text-3xl">Visual Showcase</h3>
-        <p className="text-zinc-400">A bento-style snapshot of architecture, infrastructure, and data work.</p>
+        <p className="text-xs uppercase tracking-[0.2em] text-[var(--color-primary)]/75">Selected Work</p>
+        <h3 className="text-2xl font-semibold text-white md:text-3xl">Case Studies</h3>
+        <p className="max-w-3xl text-[var(--color-text-muted)]">Impact-first snapshots of identity, migration, compliance, and infrastructure work shipped in real enterprise environments.</p>
       </div>
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
